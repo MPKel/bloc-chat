@@ -1,0 +1,17 @@
+/*.rooms-container {
+  background-color: gray;
+  width: fit-content;
+  height: 500px;
+}*/
+
+.room-listing {
+  padding-bottom: 15px;
+
+}
+.room-name {
+  font-size: 20px;
+  color: gray;
+  text-decoration: none;
+
+
+}
