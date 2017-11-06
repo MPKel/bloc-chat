@@ -1,0 +1,16 @@
+
+
+<div class="new-room-modal">
+  <div class="modal-header">
+    <h2 class="modal-title">Create new room</h2>
+  </div>
+  <h3 class="modal-subtitle">Enter a room name</h3>
+  <div class="modal-body">
+    <input type="text" ng-model="newRoom.newRoomInput" default="newRoom.newRoomInput">
+    <button type="button" ng-click="addRoom(newRoom.newRoomInput)" class="btn add-room">Add room</button>
+  </div>
+  <div class="modal-footer">
+    <button class="btn btn-primary" type="button" ng-click="ok()">OK</button>
+    <button class="btn btn-warning" type="button" ng-click="cancel()">Cancel</button>
+  </div>
+</div>

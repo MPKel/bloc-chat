@@ -1,5 +1,5 @@
 <div class="rooms-container">
-  <div class="room-listing" ng-repeat="rooms in home.Room.all">
+  <div class="room-listing" ng-repeat="rooms in home.Room.all track by $index">
     <a href="" class="room-name">{{rooms.$value}}
   </div>
 </div>

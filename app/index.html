@@ -3,20 +3,38 @@
 <head lang="en">
     <meta charset="UTF-8">
     <title>Bloc Base Project</title>
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
     <link rel="stylesheet" href="/styles/main.css">
     <link rel="stylesheet" href="/styles/home.css">
+
 </head>
-<body>
+<body ng-controller="ModalCtrl as modal">
   <div class="main-sidebar">
-    <h1 class="main-title">Bloc Chat</h1>
+    <header>
+      <h1 class="main-title">Bloc Chat</h1>
+      <button type="button" ng-click="modal.openModal()" class="new-room-button">New room</button>
+    </header>
     <ui-view></ui-view>
   </div>
+
+
+
+
+
+
+
+
+
 
     <!-- Angular -->
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
 
     <!-- AngularUI Router -->
      <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.4.2/angular-ui-router.min.js"></script>
+
+
+     <!-- AngularUI Bootstrap -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.5.0/ui-bootstrap-tpls.min.js"></script>
 
 
      <!-- FireBase -->
@@ -42,6 +60,7 @@
      <!-- Application Files -->
     <script src="/scripts/app.js"></script>
     <script src="/scripts/controllers/HomeCtrl.js"></script>
+    <script src="/scripts/controllers/ModalCtrl.js"></script>
     <script src="/scripts/services/Room.js"></script>
 </body>
 </html>
