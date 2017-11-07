@@ -6,7 +6,7 @@
         $uibModal.open({
           templateUrl: '/../../templates/newRoomModal.html',
           controller: function ($scope, $uibModalInstance) {
-            $scope.newRoomInput = "test123";
+            $scope.newRoomInput = "default123";
 
             $scope.addRoom = function (roomName) {
               $scope.newRoomInput = roomName;
