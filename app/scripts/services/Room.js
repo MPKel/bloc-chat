@@ -8,8 +8,10 @@
     Room.all = rooms;
 
     Room.add = function(room) {
-      var roomsRef = firebase.database().ref("rooms/" + room);
-      roomsRef.set("room " + room);
+      //var roomsRef = firebase.database().ref("rooms/" + room);
+      //roomsRef.set("room " + room);
+      rooms.$add(room);
+
     }
 
     return Room;
