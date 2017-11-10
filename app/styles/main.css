@@ -27,9 +27,9 @@ header {
   align-content: center;
   position: fixed;
   background-color: lightgray;
-  width: 25vw;
+  width: 24%;
   height: 100%;
-  padding: 20px;
+
 }
 
 .new-room-button {
@@ -91,4 +91,40 @@ header {
 .add-room {
   background-color: gray;
   color: white;
+}
+
+
+
+.main-chat-view {
+  width: 74%;
+  height: inherit;
+  position: fixed;
+  left: 25%;
+  top: 0;
+
+}
+
+.message-container {
+  background-color: lightgray;
+  padding: 8px;
+  margin: 8px;
+  border: 1px solid black;
+  border-radius: 0 10px 10px 10px;
+  box-shadow: 5px 5px 3px #888888;
+}
+
+.message-user {
+  font-size: 15px;
+}
+
+.message-date {
+  display: inline-block;
+  font-size: 15px;
+
+}
+
+.message-content {
+  font-size: 25px;
+  text-align: center;
+  color: #00800f;
 }

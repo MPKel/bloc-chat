@@ -1,5 +1,13 @@
 <div class="rooms-container">
   <div class="room-listing" ng-repeat="rooms in home.rooms track by $index">
-    <a href="" class="room-name">{{rooms.$value}}
+    <a ng-click="home.displayRoom($index)" class="room-name">{{rooms.$value}}</a>
+  </div>
+</div>
+
+<div class="main-chat-view">
+  <div class="message-container" ng-repeat="messages in home.query track by $index">
+    <div class="message-user"><b>User:</b> {{messages.username}}</div>
+    <div class="message-date"><b>Date:</b> {{messages.sentAt}}</div>
+    <div class="message-content">{{messages.content}}</div>
   </div>
 </div>

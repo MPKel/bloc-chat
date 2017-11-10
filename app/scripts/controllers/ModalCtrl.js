@@ -9,8 +9,7 @@
             $scope.newRoomInput = "default123";
 
             $scope.addRoom = function (roomName) {
-              $scope.newRoomInput = roomName;
-              Room.add($scope.newRoomInput);
+              Room.add(roomName);
               $uibModalInstance.close();
             };
             $scope.ok = function () {
