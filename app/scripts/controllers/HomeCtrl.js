@@ -8,10 +8,10 @@
 
 
 
-      this.displayRoom = function (index){
-        this.activeRoom = this.rooms[index].$id;
-        Message.getByRoomId(this.activeRoom);
-        this.query = Message.query;
+      this.displayRoom = function (Room){
+        this.activeRoom = Room.$id;
+        this.messages = Message.getByRoomId(this.activeRoom);
+
       };
 
 

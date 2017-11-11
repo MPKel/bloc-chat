@@ -5,18 +5,18 @@
     this.openModal = function () {
         $uibModal.open({
           templateUrl: '/../../templates/newRoomModal.html',
-          controller: function ($scope, $uibModalInstance) {
-            $scope.newRoomInput = "default123";
+          controller: function ( $uibModalInstance) {
+            this.newRoomInput = "default123";
 
-            $scope.addRoom = function (roomName) {
+            this.addRoom = function (roomName) {
               Room.add(roomName);
               $uibModalInstance.close();
             };
-            $scope.ok = function () {
+            this.ok = function () {
               $uibModalInstance.close();
             };
 
-            $scope.cancel = function () {
+            this.cancel = function () {
               $uibModalInstance.dismiss('cancel');
             };
           },
