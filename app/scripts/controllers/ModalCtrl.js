@@ -5,10 +5,10 @@
     this.openModal = function () {
         $uibModal.open({
           templateUrl: '/../../templates/newRoomModal.html',
-          controller: function ( $uibModalInstance) {
+          controller: function ($uibModalInstance) {
             this.newRoomInput = "default123";
 
-            this.addRoom = function (roomName) {
+            this.addRoom = function(roomName) {
               Room.add(roomName);
               $uibModalInstance.close();
             };

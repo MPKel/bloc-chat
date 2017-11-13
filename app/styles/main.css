@@ -2,53 +2,82 @@
 * {
 margin: 0;
 padding: 0;
-}
+box-sizing: border-box;
 
-html, body {
-  //height: 100vh;
+}
+html {
+  height: 100vh;
+  width: 100vw;
+}
+body {
+  height: 100vh;
   min-height:100%;
-  font-family: 'Ubuntu', sans-serif;
-  background-color: #bfbfbf;
+  font-family: 'Marcellus SC', serif;
+  background: rgba(191, 191, 191, 1) url("/assets/images/dragonbg.png") 50% 40% no-repeat fixed;
+  padding-top: 1%;
 }
 
 header {
-  align-content: center;
-  width: 25vw;
-
-}
-
-.main-title {
-  font-size: 30px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  width: 90%;
   padding: 10px;
-  display: inline;
-
+  height: 22%;
 }
+
+.title-1 {
+  text-align: center;
+  }
+
+.title-1 img {
+  height: 100%;
+  width: 100%;
+}
+
 
 .main-sidebar {
+
   align-content: center;
-  position: fixed;
   background-color: #66c2ff;
-  width: 24%;
-  height: 100%;
+  width: 19%;
+  height: 90%;
   padding: 8px;
+  margin: 15px;
   box-shadow: 5px 5px 3px #888888;
+  border-radius: 0 10px 10px 10px;
+  /*overflow: auto;
+  overflow-x: hidden;*/
+  border: 3px solid black;
 
 }
 
-.new-room-button {
-  font-size: 13px;
-  color: black;
-  position: fixed;
-  padding: 5px 10px 5px 10px;
-  border-radius: 6px;
-  background-color: white;
 
+.new-room-button {
+  font-size: 16px;
+  color: black;
+  width: 70%;
+  height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5px 10px 5px 10px;
+  background-color: rgba(191, 191, 191, .7);
+  box-shadow: 2px 2px 3px #000000;
+}
+
+.new-room-button:hover {
+  color: red;
+  background-color: white;
+  box-shadow: 5px 5px 7px #000000;
 }
 
 .new-room-modal {
-  background-color: lightgray;
+  background-color: #66c2ff;
   align-content: center;
   position: fixed;
+  z-index: 450;
+  border: 3px solid white;
   left: 40%;
   top: 30%;
   border-radius: 25px;
@@ -64,6 +93,7 @@ header {
   margin-right: auto;
   text-align: center;
   padding-top: 20px;
+
 }
 
 .modal-title{
@@ -78,8 +108,7 @@ header {
 }
 
 .btn {
-  /*padding: 12px 20px 12px 20px;*/
-  margin-top: 4px;
+    margin-top: 4px;
   height: 40px;
   width: 85px;
   border-radius: 8px;
@@ -98,38 +127,23 @@ header {
 
 
 
-.main-chat-view {
-  width: 74%;
-  height: inherit;
-  position: fixed;
-  left: 25%;
-  top: 0;
+@media screen and (max-width: 700px) {
+
+  .main-sidebar {
+    width: 16%;
+    background-color: red;
+  }
+
+  .main-chat-view {
+    background-color: red;
+    position: fixed;
+    right: 2%;
+
+ }
+ .message-container {
+   background-color: red;
+    right: 2%;
+ }
 
 
-
-}
-
-.message-container {
-  background-color: #66c2ff;
-  padding: 8px;
-  margin: 8px;
-  border: 1px solid black;
-  border-radius: 0 10px 10px 10px;
-  box-shadow: 5px 5px 3px #000000;
-}
-
-.message-user {
-  font-size: 15px;
-}
-
-.message-date {
-  display: inline-block;
-  font-size: 15px;
-
-}
-
-.message-content {
-  font-size: 25px;
-  text-align: center;
-  color: #00800f;
-}
+ }
