@@ -60,9 +60,9 @@
 .main-chat-view {
   position: fixed;
   height: 88vh;
-  width: 65vw;
+  width: 56vw;
   top: 3.8%;
-  right: 10%;
+  left: 21%;
   /*bottom: 2%;*/
   z-index: 300;
   overflow: auto;
@@ -74,10 +74,11 @@
 .message-container {
   background-color: #66c2ff;
   margin-bottom: 14px;
+  width: 55vw;
   padding: 5px;
   border: 3px solid black;
   border-radius: 0 20px 20px 20px;
-  box-shadow: 9px 9px 10px #00000b;
+  box-shadow: 5px 5px 6px #00000b;
   /*position: relative;*/
   z-index: 200;
 

@@ -17,6 +17,16 @@
     <ui-view></ui-view>
   </div>
 
+  <div class="user-box" ng-controller="HomeCtrl as home">
+      <div class="user-title">User Name:</div>
+      <div class="user-name">{{home.userName || "enter name"}}</div>
+      <img src="/assets/images/profpic.png" class="profile-pic" alternate="profile picture">
+  </div>
+
+  <div class="advertise">
+    <img src="/assets/images/adverthome.png" class="ad1">
+  </div>
+
 
 
 
@@ -33,9 +43,11 @@
     <!-- AngularUI Router -->
      <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.4.2/angular-ui-router.min.js"></script>
 
-
      <!-- AngularUI Bootstrap -->
      <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.5.0/ui-bootstrap-tpls.min.js"></script>
+
+     <!--Angular Cookies -->
+     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-cookies.js"></script>
 
 
      <!-- FireBase -->
@@ -64,5 +76,7 @@
     <script src="/scripts/controllers/ModalCtrl.js"></script>
     <script src="/scripts/services/Room.js"></script>
     <script src="/scripts/services/Message.js"></script>
+    <script src="/scripts/services/Cookies.js"></script>
+
 </body>
 </html>

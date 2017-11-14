@@ -1,0 +1,17 @@
+
+<div class="user-modal-backdrop">
+  <div class="modal">
+    <div class="user-modal-container">
+      <div class="user-modal-header">
+        <h2 class="modal-title">Set your Username</h2>
+      </div>
+      <h3 class="modal-subtitle">This name will appear when you post messages</h3>
+      <div class="modal-body">
+        <input type="text" ng-model="newUser.newUserInput"  class="new-user-input" placeholder="Pick your username">
+      </div>
+      <div class="modal-footer">
+        <button type="button" ng-click="newUser.setUser(newUser.newUserInput)" class="btn set-user">Set Username</button>
+      </div>
+    </div>
+  </div>
+</div>

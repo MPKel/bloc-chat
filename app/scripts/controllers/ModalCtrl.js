@@ -6,7 +6,7 @@
         $uibModal.open({
           templateUrl: '/../../templates/newRoomModal.html',
           controller: function ($uibModalInstance) {
-            this.newRoomInput = "default123";
+            
 
             this.addRoom = function(roomName) {
               Room.add(roomName);
@@ -20,7 +20,9 @@
               $uibModalInstance.dismiss('cancel');
             };
           },
-          controllerAs: "newRoom"
+          controllerAs: "newRoom",
+          backdrop  : 'static',
+          keyboard  : false
         })
       };
     }

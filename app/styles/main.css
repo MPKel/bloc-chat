@@ -41,7 +41,7 @@ header {
 
   align-content: center;
   background-color: #66c2ff;
-  width: 19%;
+  width: 19vw;
   height: 90%;
   padding: 8px;
   margin: 15px;
@@ -72,11 +72,11 @@ header {
   box-shadow: 5px 5px 7px #000000;
 }
 
-.new-room-modal {
+.modal {
   background-color: #66c2ff;
-  align-content: center;
+  text-align: center;
   position: fixed;
-  z-index: 450;
+  z-index: 500;
   border: 3px solid white;
   left: 40%;
   top: 30%;
@@ -84,6 +84,12 @@ header {
   width: 300px;
   height: 200px;
 
+}
+
+.new-user-input {
+  width: 170px;
+  height: 25px;
+  margin-top: 8px;
 }
 
 .modal-container {
@@ -125,6 +131,71 @@ header {
   color: white;
 }
 
+
+.modal-container {
+  height: 80%;
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding-top: 20px;
+
+}
+
+.user-modal-backdrop {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  left: 0px;
+  top: 0px;
+  z-index: 499;
+}
+
+
+.user-box {
+  position: fixed;
+  top: 3.5%;
+  right: 10%;
+  width: 12vw;
+  height: 25vh;
+  background-color: #66c2ff;
+  border-radius: 10px;
+  border: 3px solid black;
+  padding: 5px;
+  text-align: center;
+  box-shadow: 5px 5px 3px #888888;
+}
+.user-title {
+  text-decoration: underline;
+  font-size: 1.2em;
+}
+.user-name {
+  font-size: 1.8em;
+  color: yellow;
+  text-shadow: 2px 2px #ff0000;
+}
+.profile-pic {
+  height: 60%;
+  width: 60%;
+  border: 1px solid black;
+}
+
+.advertise {
+  position: fixed;
+  top: 32.5%;
+  right: 10%;
+  width: 12vw;
+  height: 45vh;
+  background: rgba(191, 2, 191, 1);
+  z-index: 900;
+  text-align: center;
+  box-shadow: 5px 5px 3px #888888;
+}
+
+.ad1 {
+  height: 100%;
+  width: 100%;
+}
 
 
 @media screen and (max-width: 700px) {
