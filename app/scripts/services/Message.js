@@ -3,7 +3,8 @@
     var Message = {};
     var ref = firebase.database().ref().child("messages");
     var messages = $firebaseArray(ref);
-    
+    var date = new Date();
+    var datePost = date.toDateString();
 
 
 
@@ -14,6 +15,14 @@
       return messageResult;
 
   };
+
+
+  Message.send = function(newMessage, roomKey, userId) {
+    messages.$add({"content": newMessage, "roomId": roomKey, "username": userId, "sentAt": datePost});
+    
+  };
+
+
 
     return Message;
 }

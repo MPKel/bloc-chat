@@ -11,3 +11,7 @@
     <div class="message-content">{{messages.content}}</div>
   </div>
 </div>
+<div class="chat-send" ng-show="home.activeRoom">
+  <input type="text"  placeholder="Write your message here!" class="room-message-input" ng-model="home.latestMessage">
+  <button class="btn btn-send" type="button" ng-click="home.addMessage()">Send</button>
+</div>
