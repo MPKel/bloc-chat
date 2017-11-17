@@ -17,11 +17,10 @@
   };
 
 
-  Message.send = function(newMessage, roomKey, userId) {
-    messages.$add({"content": newMessage, "roomId": roomKey, "username": userId, "sentAt": datePost});
-    
-  };
+  Message.send = function(newMessage) {
+    messages.$add(newMessage);
 
+  };
 
 
     return Message;

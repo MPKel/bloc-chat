@@ -7,7 +7,7 @@
       </div>
       <h3 class="modal-subtitle">This name will appear when you post messages</h3>
       <div class="modal-body">
-        <input type="text" ng-model="newUser.newUserInput"  class="new-user-input" placeholder="Pick your username">
+        <input type="text" ng-model="newUser.newUserInput"  class="new-user-input" placeholder="Pick your username" ng-keypress="$event.keyCode == 13 && newUser.setUser(newUser.newUserInput)">
       </div>
       <div class="modal-footer">
         <button type="button" ng-click="newUser.setUser(newUser.newUserInput)" class="btn set-user">Set Username</button>

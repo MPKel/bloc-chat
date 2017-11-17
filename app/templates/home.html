@@ -4,14 +4,14 @@
     </div>
 </div>
 
-<div class="main-chat-view">
+<div class="main-chat-view" scroll-glue>
   <div class="message-container" ng-repeat="messages in home.messages track by $index">
     <div class="message-user"><b>User:</b> {{messages.username}}</div>
-    <div class="message-date"><b>Date:</b> {{messages.sentAt}}</div>
+    <div class="message-date"><b>Date:</b> {{messages.sentAt | date : "medium"}}</div>
     <div class="message-content">{{messages.content}}</div>
   </div>
 </div>
 <div class="chat-send" ng-show="home.activeRoom">
-  <input type="text"  placeholder="Write your message here!" class="room-message-input" ng-model="home.latestMessage">
-  <button class="btn btn-send" type="button" ng-click="home.addMessage()">Send</button>
+  <input type="text"  placeholder="Write your message here!" class="room-message-input" ng-model="home.latestMessage" ng-keypress="$event.keyCode == 13 && home.addMessage()" >
+  <button class="btn btn-send" type="button" ng-click="home.addMessage()" >Send</button>
 </div>
