@@ -1,5 +1,5 @@
 (function() {
-    function HomeCtrl(Room, Message, $cookies, $scope, $firebaseArray) {
+    function HomeCtrl(Room, Message, $cookies, $scope) {
 
       this.rooms = Room.all;
 
@@ -28,5 +28,5 @@
 
     angular
         .module('blocChat')
-        .controller('HomeCtrl', ['Room', 'Message', '$cookies', '$scope', '$firebaseArray', HomeCtrl]);
+        .controller('HomeCtrl', ['Room', 'Message', '$cookies', '$scope', HomeCtrl]);
 })();
